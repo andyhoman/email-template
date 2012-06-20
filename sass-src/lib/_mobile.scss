@@ -1,0 +1,118 @@
+/*
+	Mobile
+	------------
+		
+	Define Responsive breakpoints for:
+	1. Mobile-portrait
+	2. Mobile-landscape
+*/
+
+// Responsive Tables
+.collapse,
+.collapse-toc {
+	@include mobile-landscape {
+		display: block;
+		position: relative;
+		width: 100%;
+	}
+	
+	tbody {
+		@include mobile-landscape {
+			display: block;
+			float: left;
+			width: 100%;
+		}
+
+		tr { 
+			@include mobile-landscape {
+				display: block;
+				width: 100% !important;
+			}
+		}
+	}
+
+	th {
+		@include mobile-landscape {
+			display: block;
+			width: 100% !important;
+		}
+	}
+}
+
+.collapse-toc {
+	tr { 
+		@include mobile-landscape {
+			text-align: center !important;
+		}
+	}
+	
+	th {
+		@include mobile-landscape {
+			display: inline-block !important;
+			width: $table-of-content-width !important;
+		}
+	}
+}
+
+
+/* Device Layout */
+.w580,
+table[class=w580],
+td[class=w580],
+img[class=w580]
+{
+	@include mobile-portrait {
+		width: 280px !important;
+	}
+
+	@include mobile-landscape {
+		width: 100% !important;
+	}
+}
+
+.w590,
+table[class=w590],
+td[class=w590],
+img[class=w590]
+{
+	@include mobile-portrait {
+		width: 100% !important;
+	}
+
+	@include mobile-landscape {
+		width: 100% !important;
+	}
+}
+
+.w640,
+table[class=w640],
+td[class=w640],
+img[class=w640]
+{
+	@include mobile-portrait {
+		width: $default-mobile-portrait - 20 !important;
+	}
+
+	@include mobile-landscape {
+		width: 90% !important;
+	}
+}
+
+.w10,
+table[class=w10],
+td[class=w10],
+img[class=w10]
+{
+	@include mobile-portrait {
+		display: block !important;
+		width: 10px !important;
+	}
+
+	@include mobile-landscape {
+		display: none !important;
+		width: 10% !important;
+	}
+}
+
+
+

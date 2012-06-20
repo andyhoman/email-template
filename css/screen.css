@@ -1,0 +1,1037 @@
+/*
+	Boilerplate
+	-----------
+		
+	Define:
+	1. Boilerplate styles
+	2. Global styles
+*/
+/* Boilerplate */
+/* Client-specific Styles */
+/* line 14, ../sass-src/lib/_boilerplate.scss */
+#outlook a {
+  padding: 0;
+}
+
+/* Force Outlook to provide a "view in browser" button. */
+/* line 18, ../sass-src/lib/_boilerplate.scss */
+.ReadMsgBody {
+  width: 100%;
+}
+
+/* line 22, ../sass-src/lib/_boilerplate.scss */
+.ExternalClass {
+  width: 100%;
+  display: block !important;
+}
+
+/* Force Hotmail to display emails at full width */
+/* line 27, ../sass-src/lib/_boilerplate.scss */
+html {
+  background: white;
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+}
+
+/* line 34, ../sass-src/lib/_boilerplate.scss */
+body {
+  background-color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  min-width: 100% !important;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+}
+@media only screen and (max-width: 480px) {
+  /* line 34, ../sass-src/lib/_boilerplate.scss */
+  body {
+    width: 100% !important;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 34, ../sass-src/lib/_boilerplate.scss */
+  body {
+    width: 320px !important;
+    text-align: left;
+  }
+}
+
+/* Reset Styles */
+/*Turn height: auto; off - breaks image in Outlook 2000/2003*/
+/* line 56, ../sass-src/lib/_boilerplate.scss */
+img {
+  color: #f09;
+  display: block;
+  font-style: italic;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+}
+@media only screen and (max-width: 320px) {
+  /* line 56, ../sass-src/lib/_boilerplate.scss */
+  img {
+    display: inline-block !important;
+    height: auto !important;
+  }
+}
+
+/* line 70, ../sass-src/lib/_boilerplate.scss */
+a img {
+  border: none;
+}
+
+/* line 78, ../sass-src/lib/_boilerplate.scss */
+br,
+strong br,
+.header-content a br,
+.table-of-contents a br,
+.table-of-contents p br,
+.event .event-date-month br,
+.event .event-date-day br,
+.footer .contact-details .company-name br,
+.footer .contact-details .company-address br,
+.footer .hotline p br,
+.footer .hotline span br,
+.footer .preferences br,
+b br,
+em br,
+i br {
+  line-height: 100%;
+}
+
+/* line 87, ../sass-src/lib/_boilerplate.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333333 !important;
+  line-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-wrap: unrestricted;
+}
+
+/* line 99, ../sass-src/lib/_boilerplate.scss */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #1d72b0 !important;
+  text-decoration: none;
+}
+
+/* line 109, ../sass-src/lib/_boilerplate.scss */
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  color: red !important;
+}
+
+/* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+/* line 119, ../sass-src/lib/_boilerplate.scss */
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: #165684 !important;
+}
+
+/* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+/* line 124, ../sass-src/lib/_boilerplate.scss */
+table td,
+table tr {
+  border-collapse: collapse;
+}
+
+/* line 133, ../sass-src/lib/_boilerplate.scss */
+.yshortcuts,
+.yshortcuts a,
+.yshortcuts a:link,
+.yshortcuts a:visited,
+.yshortcuts a:hover,
+.yshortcuts a span {
+  color: black;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background: none !important;
+}
+
+/* Template-specific Styles*/
+/* Fonts and Content */
+/* line 144, ../sass-src/lib/_boilerplate.scss */
+a {
+  color: #1d72b0;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* line 151, ../sass-src/lib/_boilerplate.scss */
+h1,
+h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  margin: 0 0 18px 0;
+  text-align: left;
+}
+
+@media only screen and (max-width: 320px) {
+  /* line 160, ../sass-src/lib/_boilerplate.scss */
+  h1 {
+    font-size: 21px !important;
+    text-align: left !important;
+  }
+}
+
+/* line 167, ../sass-src/lib/_boilerplate.scss */
+h3 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* line 173, ../sass-src/lib/_boilerplate.scss */
+p,
+li {
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: left;
+  margin: 0 0 18px 0;
+}
+
+@media only screen and (max-width: 320px) {
+  /* line 182, ../sass-src/lib/_boilerplate.scss */
+  p {
+    font-size: 13px !important;
+    line-height: 18px !important;
+    text-align: left !important;
+  }
+}
+
+/* line 190, ../sass-src/lib/_boilerplate.scss */
+ul {
+  list-style-type: disc;
+  margin: 0 0 18px 24px;
+  padding: 0;
+}
+
+/* line 196, ../sass-src/lib/_boilerplate.scss */
+ol {
+  margin: 0 0 18px 24px;
+  padding: 0;
+}
+
+/* line 201, ../sass-src/lib/_boilerplate.scss */
+li {
+  font-weight: bold;
+  margin: 0 0 2px 0;
+  padding: 0;
+}
+
+/* line 207, ../sass-src/lib/_boilerplate.scss */
+li strong, li .header-content a, .header-content li a, li .table-of-contents a, .table-of-contents li a,
+li .table-of-contents p,
+.table-of-contents li p, li .event .event-date-month, .event li .event-date-month, li .event .event-date-day, .event li .event-date-day, li .footer .contact-details .company-name, .footer .contact-details li .company-name,
+li .footer .contact-details .company-address,
+.footer .contact-details li .company-address, li .footer .hotline p, .footer .hotline li p,
+li .footer .hotline span,
+.footer .hotline li span, li .footer .preferences, .footer li .preferences {
+  color: #111111;
+}
+
+/* line 210, ../sass-src/lib/_boilerplate.scss */
+code {
+  font-family: monospace;
+}
+
+/* line 213, ../sass-src/lib/_boilerplate.scss */
+strong, .header-content a, .table-of-contents a,
+.table-of-contents p, .event .event-date-month, .event .event-date-day, .footer .contact-details .company-name,
+.footer .contact-details .company-address, .footer .hotline p,
+.footer .hotline span, .footer .preferences {
+  font-weight: bold;
+}
+
+/* End Boilerplate */
+/*
+	Mobile
+	------------
+		
+	Define Responsive breakpoints for:
+	1. Mobile-portrait
+	2. Mobile-landscape
+*/
+@media only screen and (max-width: 480px) {
+  /* line 12, ../sass-src/lib/_mobile.scss */
+  .collapse,
+  .collapse-toc {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 19, ../sass-src/lib/_mobile.scss */
+  .collapse tbody,
+  .collapse-toc tbody {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 26, ../sass-src/lib/_mobile.scss */
+  .collapse tbody tr,
+  .collapse-toc tbody tr {
+    display: block;
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 34, ../sass-src/lib/_mobile.scss */
+  .collapse th,
+  .collapse-toc th {
+    display: block;
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 43, ../sass-src/lib/_mobile.scss */
+  .collapse-toc tr {
+    text-align: center !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 49, ../sass-src/lib/_mobile.scss */
+  .collapse-toc th {
+    display: inline-block !important;
+    width: 85% !important;
+  }
+}
+
+/* Device Layout */
+@media only screen and (max-width: 320px) {
+  /* line 63, ../sass-src/lib/_mobile.scss */
+  .w580,
+  table[class=w580],
+  td[class=w580],
+  img[class=w580] {
+    width: 280px !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 63, ../sass-src/lib/_mobile.scss */
+  .w580,
+  table[class=w580],
+  td[class=w580],
+  img[class=w580] {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  /* line 77, ../sass-src/lib/_mobile.scss */
+  .w590,
+  table[class=w590],
+  td[class=w590],
+  img[class=w590] {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 77, ../sass-src/lib/_mobile.scss */
+  .w590,
+  table[class=w590],
+  td[class=w590],
+  img[class=w590] {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  /* line 91, ../sass-src/lib/_mobile.scss */
+  .w640,
+  table[class=w640],
+  td[class=w640],
+  img[class=w640] {
+    width: 300px !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 91, ../sass-src/lib/_mobile.scss */
+  .w640,
+  table[class=w640],
+  td[class=w640],
+  img[class=w640] {
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  /* line 105, ../sass-src/lib/_mobile.scss */
+  .w10,
+  table[class=w10],
+  td[class=w10],
+  img[class=w10] {
+    display: block !important;
+    width: 10px !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 105, ../sass-src/lib/_mobile.scss */
+  .w10,
+  table[class=w10],
+  td[class=w10],
+  img[class=w10] {
+    display: none !important;
+    width: 10% !important;
+  }
+}
+
+/*
+	Template EDM
+	------------
+		
+	Define:
+	1. Template Structure
+*/
+/* Structure */
+/* Mobile Structure */
+@media only screen and (max-width: 320px) {
+  /* line 13, ../sass-src/lib/_main.scss */
+  .w-full-width {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 13, ../sass-src/lib/_main.scss */
+  .w-full-width {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  /* line 23, ../sass-src/lib/_main.scss */
+  .hide {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 23, ../sass-src/lib/_main.scss */
+  .hide {
+    display: none !important;
+  }
+}
+
+/* Social Media Navigation */
+/* line 34, ../sass-src/lib/_main.scss */
+#social-navigation {
+  background: #e2e2e2;
+  color: #b3b3b3;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 40, ../sass-src/lib/_main.scss */
+#social-navigation a {
+  color: #666666;
+  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+}
+/* line 48, ../sass-src/lib/_main.scss */
+#social-navigation .webversion a {
+  color: #ec6a76;
+}
+/* line 53, ../sass-src/lib/_main.scss */
+#social-navigation .top-link {
+  border-right: 1px solid #737373;
+  font-size: 12px;
+  text-align: center;
+}
+/* line 59, ../sass-src/lib/_main.scss */
+#social-navigation .top-link-date {
+  border-right: 1px solid #737373;
+  font-size: 14px;
+  text-align: left;
+}
+/* line 65, ../sass-src/lib/_main.scss */
+#social-navigation .tweet {
+  background-color: #33c7fa;
+}
+/* line 69, ../sass-src/lib/_main.scss */
+#social-navigation .facebook {
+  background-color: #4367a4;
+}
+/* line 73, ../sass-src/lib/_main.scss */
+#social-navigation .forward {
+  background-color: #00a651;
+}
+
+/* Secondary Color Types */
+/* line 79, ../sass-src/lib/_main.scss */
+span.preheader {
+  display: none !important;
+}
+
+/* Used for alternate background colours in section-dividers and table s*/
+/* line 84, ../sass-src/lib/_main.scss */
+.grey {
+  background: #eaeaea;
+}
+
+/* line 87, ../sass-src/lib/_main.scss */
+.white {
+  background: white;
+}
+
+/* line 90, ../sass-src/lib/_main.scss */
+.border {
+  border: 1px solid #737373;
+}
+
+/* line 93, ../sass-src/lib/_main.scss */
+.border-bottom {
+  border-bottom: 1px solid #bfbfbf;
+}
+
+/* Section Divider*/
+/* line 98, ../sass-src/lib/_main.scss */
+.section-divider {
+  margin-bottom: 24px;
+}
+
+/* Button Styles */
+/* line 104, ../sass-src/lib/_main.scss */
+.btn {
+  background-color: #1d72b0;
+  color: white;
+  display: block;
+  padding: 10px 10px 10px 10px;
+  text-align: center !important;
+  text-decoration: none;
+  width: 200px;
+}
+/* line 113, ../sass-src/lib/_main.scss */
+.btn a {
+  color: white;
+}
+
+/* Images */
+@media only screen and (max-width: 320px) {
+  /* line 119, ../sass-src/lib/_main.scss */
+  .full-width-img {
+    width: 320px !important;
+    max-width: 100% !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 119, ../sass-src/lib/_main.scss */
+  .full-width-img {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/*	Prevent Webkit and Windows Mobile platforms from changing default font sizes on header and footer. 
+	General Content
+*/
+/* line 135, ../sass-src/lib/_main.scss */
+.header-content,
+.footer-content-left,
+.footer-content-right {
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+/* Header content */
+/* line 141, ../sass-src/lib/_main.scss */
+.header-content {
+  color: #cccccc;
+  font-size: 12px;
+}
+/* line 145, ../sass-src/lib/_main.scss */
+.header-content td {
+  padding: 7px 0 8px 0;
+}
+/* line 149, ../sass-src/lib/_main.scss */
+.header-content a {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+/* Table-of-contents / Entry Meta */
+/* line 157, ../sass-src/lib/_main.scss */
+.meta {
+  background-color: #333333;
+}
+@media only screen and (max-width: 320px) {
+  /* line 157, ../sass-src/lib/_main.scss */
+  .meta {
+    display: block;
+    margin-bottom: 12px;
+    padding: 6px 0;
+  }
+}
+/* line 166, ../sass-src/lib/_main.scss */
+.meta p {
+  color: #aaaaaa;
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+}
+@media only screen and (max-width: 320px) {
+  /* line 166, ../sass-src/lib/_main.scss */
+  .meta p {
+    text-align: center !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 166, ../sass-src/lib/_main.scss */
+  .meta p {
+    text-align: center !important;
+  }
+}
+/* line 182, ../sass-src/lib/_main.scss */
+.meta .meta-issue-number {
+  color: white;
+}
+
+/* line 188, ../sass-src/lib/_main.scss */
+.navigation .navigation-title,
+.table-of-contents {
+  color: #333333 !important;
+  font-size: 15px;
+  margin: 4px 0;
+}
+
+@media only screen and (max-width: 320px) {
+  /* line 194, ../sass-src/lib/_main.scss */
+  .navigation-title {
+    text-align: center !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 194, ../sass-src/lib/_main.scss */
+  .navigation-title {
+    text-align: center !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  /* line 204, ../sass-src/lib/_main.scss */
+  .table-of-contents {
+    padding: 0 18px;
+  }
+}
+/* line 210, ../sass-src/lib/_main.scss */
+.table-of-contents tbody {
+  width: 100%;
+}
+@media only screen and (max-width: 480px) {
+  /* line 210, ../sass-src/lib/_main.scss */
+  .table-of-contents tbody {
+    display: table-row-group !important;
+    float: none !important;
+    width: 85% !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 218, ../sass-src/lib/_main.scss */
+  .table-of-contents tbody tr {
+    display: table-row !important;
+    float: none !important;
+    width: 85% !important;
+  }
+}
+/* line 227, ../sass-src/lib/_main.scss */
+.table-of-contents td {
+  padding-top: 5px;
+  padding-bottom: 8px;
+}
+/* line 233, ../sass-src/lib/_main.scss */
+.table-of-contents a,
+.table-of-contents p {
+  color: #1d72b0;
+  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+}
+/* line 241, ../sass-src/lib/_main.scss */
+.table-of-contents span {
+  color: #aaaaaa;
+}
+
+/* Hero Content */
+/* line 247, ../sass-src/lib/_main.scss */
+.major-hero {
+  background-color: #eeeeee;
+}
+/* line 250, ../sass-src/lib/_main.scss */
+.major-hero .hero-content {
+  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (max-width: 320px) {
+  /* line 250, ../sass-src/lib/_main.scss */
+  .major-hero .hero-content {
+    width: 320px !important;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 260, ../sass-src/lib/_main.scss */
+  .major-hero .hero-img {
+    width: 90% !important;
+    max-width: 100% !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 260, ../sass-src/lib/_main.scss */
+  .major-hero .hero-img {
+    width: 90% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Content - Article */
+/* line 276, ../sass-src/lib/_main.scss */
+.article th {
+  font-weight: normal;
+}
+/* line 280, ../sass-src/lib/_main.scss */
+.article h2 {
+  font-size: 21px;
+  line-height: 27px;
+  text-align: center;
+}
+@media only screen and (max-width: 320px) {
+  /* line 286, ../sass-src/lib/_main.scss */
+  .article img {
+    margin: 0 0 18px 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 286, ../sass-src/lib/_main.scss */
+  .article img {
+    margin: 0 0 18px 0;
+  }
+}
+
+/* Section Title */
+/* line 299, ../sass-src/lib/_main.scss */
+.section-title h3 {
+  color: #999999 !important;
+}
+@media only screen and (max-width: 320px) {
+  /* line 299, ../sass-src/lib/_main.scss */
+  .section-title h3 {
+    text-align: left !important;
+  }
+}
+
+/* Main Artile Content */
+/* line 311, ../sass-src/lib/_main.scss */
+.article-copy img {
+  margin-bottom: 18px;
+}
+/* line 315, ../sass-src/lib/_main.scss */
+.article-copy .img-caption {
+  border-bottom: 1px solid #f2f2f2;
+  font-style: italic;
+  margin-bottom: 28px;
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+/* General List */
+/* line 325, ../sass-src/lib/_main.scss */
+.list-index {
+  background-color: #f2f2f2;
+}
+/* line 328, ../sass-src/lib/_main.scss */
+.list-index p {
+  color: #666666;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 24px;
+  margin: 0 0 12px 0;
+  padding: 12px 0 0 0;
+}
+@media only screen and (max-width: 320px) {
+  /* line 328, ../sass-src/lib/_main.scss */
+  .list-index p {
+    padding: 0 12px 12px 12px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 328, ../sass-src/lib/_main.scss */
+  .list-index p {
+    padding: 0 12px 12px 12px;
+  }
+}
+/* line 346, ../sass-src/lib/_main.scss */
+.list-index .list-item {
+  border-top: 1px solid #aaaaaa;
+}
+/* line 349, ../sass-src/lib/_main.scss */
+.list-index .list-item:first-child {
+  border-top: none !important;
+}
+
+/* 2 Column Layout Structure */
+/* line 357, ../sass-src/lib/_main.scss */
+.article-content-2-col .submodule-2col {
+  background: #f2f2f2;
+  margin: 0;
+}
+@media only screen and (max-width: 320px) {
+  /* line 357, ../sass-src/lib/_main.scss */
+  .article-content-2-col .submodule-2col {
+    margin-top: 24px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 357, ../sass-src/lib/_main.scss */
+  .article-content-2-col .submodule-2col {
+    margin-top: 24px;
+  }
+}
+/* line 369, ../sass-src/lib/_main.scss */
+.article-content-2-col .submodule-2col p {
+  color: #666666;
+  font-size: 13px;
+  line-height: 21px;
+  margin: 0;
+}
+@media only screen and (max-width: 320px) {
+  /* line 369, ../sass-src/lib/_main.scss */
+  .article-content-2-col .submodule-2col p {
+    padding: 0 12px !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 369, ../sass-src/lib/_main.scss */
+  .article-content-2-col .submodule-2col p {
+    padding: 0 12px !important;
+  }
+}
+/* line 384, ../sass-src/lib/_main.scss */
+.article-content-2-col .submodule-2col .content {
+  margin: 0 0 18px 0;
+}
+
+/* Event Content */
+/* line 394, ../sass-src/lib/_main.scss */
+.event .event-title a {
+  text-decoration: none;
+}
+/* line 399, ../sass-src/lib/_main.scss */
+.event .event-entry {
+  padding-bottom: 28px !important;
+}
+/* line 402, ../sass-src/lib/_main.scss */
+.event .event-entry .event-entry p {
+  margin: 0 !important;
+}
+/* line 406, ../sass-src/lib/_main.scss */
+.event .event-entry .event-title {
+  line-height: 21px !important;
+}
+/* line 411, ../sass-src/lib/_main.scss */
+.event .event-entry .event-copy rssbody {
+  font-size: 14px;
+  line-height: 23px;
+}
+@media only screen and (max-width: 320px) {
+  /* line 411, ../sass-src/lib/_main.scss */
+  .event .event-entry .event-copy rssbody {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+/* line 423, ../sass-src/lib/_main.scss */
+.event .event-date-month {
+  background: #1d72b0;
+  color: white;
+  font-size: 13px;
+  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  line-height: 13px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-transform: uppercase;
+}
+/* line 435, ../sass-src/lib/_main.scss */
+.event .event-date-day {
+  background: #eeeeee;
+  color: #1d72b0;
+  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  font-size: 24px;
+}
+/* line 443, ../sass-src/lib/_main.scss */
+.event .more-info {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 28px;
+}
+
+/* Footer Structure */
+/* line 452, ../sass-src/lib/_main.scss */
+.footer .contact-details {
+  color: #999999;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+}
+@media only screen and (max-width: 320px) {
+  /* line 452, ../sass-src/lib/_main.scss */
+  .footer .contact-details {
+    text-align: left !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 452, ../sass-src/lib/_main.scss */
+  .footer .contact-details {
+    text-align: center !important;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 469, ../sass-src/lib/_main.scss */
+  .footer .contact-details .company-name span,
+  .footer .contact-details .company-address span {
+    display: block;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 466, ../sass-src/lib/_main.scss */
+  .footer .contact-details .company-name,
+  .footer .contact-details .company-address {
+    text-align: center !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 479, ../sass-src/lib/_main.scss */
+  .footer .contact-details .company-name p,
+  .footer .contact-details .company-address p {
+    text-align: center !important;
+  }
+}
+/* line 486, ../sass-src/lib/_main.scss */
+.footer .contact-details h4 {
+  font-size: 15px;
+  line-height: 18px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+/* line 494, ../sass-src/lib/_main.scss */
+.footer .contact-details p,
+.footer .contact-details a {
+  color: #999999;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
+}
+/* line 501, ../sass-src/lib/_main.scss */
+.footer .contact-details a {
+  color: #1d72b0;
+}
+/* line 505, ../sass-src/lib/_main.scss */
+.footer .contact-details span {
+  color: #999999;
+}
+@media only screen and (max-width: 320px) {
+  /* line 509, ../sass-src/lib/_main.scss */
+  .footer .contact-details .label {
+    margin-top: 12px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 509, ../sass-src/lib/_main.scss */
+  .footer .contact-details .label {
+    display: block;
+    margin-top: 12px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 519, ../sass-src/lib/_main.scss */
+  .footer .contact-details .social {
+    margin-top: 18px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 519, ../sass-src/lib/_main.scss */
+  .footer .contact-details .social {
+    margin-top: 18px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 529, ../sass-src/lib/_main.scss */
+  .footer .footer-logos {
+    margin-top: 18px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 529, ../sass-src/lib/_main.scss */
+  .footer .footer-logos {
+    margin-top: 18px;
+  }
+}
+/* line 541, ../sass-src/lib/_main.scss */
+.footer .hotline p,
+.footer .hotline span {
+  color: red;
+}
+@media only screen and (max-width: 320px) {
+  /* line 541, ../sass-src/lib/_main.scss */
+  .footer .hotline p,
+  .footer .hotline span {
+    text-align: left !important;
+  }
+}
+/* line 551, ../sass-src/lib/_main.scss */
+.footer .disclaimer {
+  color: #aaaaaa;
+  margin-bottom: 18px !important;
+}
+@media only screen and (max-width: 320px) {
+  /* line 555, ../sass-src/lib/_main.scss */
+  .footer .disclaimer p {
+    text-align: center !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 555, ../sass-src/lib/_main.scss */
+  .footer .disclaimer p {
+    text-align: center !important;
+  }
+}
+/* line 565, ../sass-src/lib/_main.scss */
+.footer .preferences {
+  color: #999999;
+  font-size: 13px;
+  margin-bottom: 18px !important;
+}
+@media only screen and (max-width: 320px) {
+  /* line 565, ../sass-src/lib/_main.scss */
+  .footer .preferences {
+    text-align: center !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 565, ../sass-src/lib/_main.scss */
+  .footer .preferences {
+    text-align: center !important;
+  }
+}
