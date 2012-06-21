@@ -1,13 +1,20 @@
 /*
 	Mobile
 	------------
-		
+
 	Define Responsive breakpoints for:
 	1. Mobile-portrait
 	2. Mobile-landscape
 */
 
-// Responsive Tables
+/* 	Responsive Tables
+	-----------------
+
+	This example only works if the table-cells are <th> not <td>.
+	<td> wont force another <td> underneath in the same <tr>.
+	It'll always try and accommodate additional <td> to the right.
+
+*/
 .collapse,
 .collapse-toc {
 	@include mobile-landscape {

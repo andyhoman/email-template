@@ -268,13 +268,21 @@ strong, .header-content a, .table-of-contents a,
 /*
 	Mobile
 	------------
-		
+
 	Define Responsive breakpoints for:
 	1. Mobile-portrait
 	2. Mobile-landscape
 */
+/* 	Responsive Tables
+	-----------------
+
+	This example only works if the table-cells are <th> not <td>.
+	<td> wont force another <td> underneath in the same <tr>.
+	It'll always try and accommodate additional <td> to the right.
+
+*/
 @media only screen and (max-width: 480px) {
-  /* line 12, ../sass-src/lib/_mobile.scss */
+  /* line 19, ../sass-src/lib/_mobile.scss */
   .collapse,
   .collapse-toc {
     display: block;
@@ -283,7 +291,7 @@ strong, .header-content a, .table-of-contents a,
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 19, ../sass-src/lib/_mobile.scss */
+  /* line 26, ../sass-src/lib/_mobile.scss */
   .collapse tbody,
   .collapse-toc tbody {
     display: block;
@@ -292,7 +300,7 @@ strong, .header-content a, .table-of-contents a,
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 26, ../sass-src/lib/_mobile.scss */
+  /* line 33, ../sass-src/lib/_mobile.scss */
   .collapse tbody tr,
   .collapse-toc tbody tr {
     display: block;
@@ -300,7 +308,7 @@ strong, .header-content a, .table-of-contents a,
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 34, ../sass-src/lib/_mobile.scss */
+  /* line 41, ../sass-src/lib/_mobile.scss */
   .collapse th,
   .collapse-toc th {
     display: block;
@@ -309,13 +317,13 @@ strong, .header-content a, .table-of-contents a,
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 43, ../sass-src/lib/_mobile.scss */
+  /* line 50, ../sass-src/lib/_mobile.scss */
   .collapse-toc tr {
     text-align: center !important;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 49, ../sass-src/lib/_mobile.scss */
+  /* line 56, ../sass-src/lib/_mobile.scss */
   .collapse-toc th {
     display: inline-block !important;
     width: 85% !important;
@@ -324,7 +332,7 @@ strong, .header-content a, .table-of-contents a,
 
 /* Device Layout */
 @media only screen and (max-width: 320px) {
-  /* line 63, ../sass-src/lib/_mobile.scss */
+  /* line 70, ../sass-src/lib/_mobile.scss */
   .w580,
   table[class=w580],
   td[class=w580],
@@ -333,7 +341,7 @@ strong, .header-content a, .table-of-contents a,
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 63, ../sass-src/lib/_mobile.scss */
+  /* line 70, ../sass-src/lib/_mobile.scss */
   .w580,
   table[class=w580],
   td[class=w580],
@@ -343,7 +351,7 @@ strong, .header-content a, .table-of-contents a,
 }
 
 @media only screen and (max-width: 320px) {
-  /* line 77, ../sass-src/lib/_mobile.scss */
+  /* line 84, ../sass-src/lib/_mobile.scss */
   .w590,
   table[class=w590],
   td[class=w590],
@@ -352,7 +360,7 @@ strong, .header-content a, .table-of-contents a,
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 77, ../sass-src/lib/_mobile.scss */
+  /* line 84, ../sass-src/lib/_mobile.scss */
   .w590,
   table[class=w590],
   td[class=w590],
@@ -362,7 +370,7 @@ strong, .header-content a, .table-of-contents a,
 }
 
 @media only screen and (max-width: 320px) {
-  /* line 91, ../sass-src/lib/_mobile.scss */
+  /* line 98, ../sass-src/lib/_mobile.scss */
   .w640,
   table[class=w640],
   td[class=w640],
@@ -371,7 +379,7 @@ strong, .header-content a, .table-of-contents a,
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 91, ../sass-src/lib/_mobile.scss */
+  /* line 98, ../sass-src/lib/_mobile.scss */
   .w640,
   table[class=w640],
   td[class=w640],
@@ -381,7 +389,7 @@ strong, .header-content a, .table-of-contents a,
 }
 
 @media only screen and (max-width: 320px) {
-  /* line 105, ../sass-src/lib/_mobile.scss */
+  /* line 112, ../sass-src/lib/_mobile.scss */
   .w10,
   table[class=w10],
   td[class=w10],
@@ -391,7 +399,7 @@ strong, .header-content a, .table-of-contents a,
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 105, ../sass-src/lib/_mobile.scss */
+  /* line 112, ../sass-src/lib/_mobile.scss */
   .w10,
   table[class=w10],
   td[class=w10],
