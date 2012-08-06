@@ -2,249 +2,13 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Newsletter Title</title>
-	<style type="text/css">
-		/* Boilerplate */
-
-		/* Client-specific Styles */
-		#outlook a { padding: 0; }	/* Force Outlook to provide a "view in browser" button. */
-		html { margin: 0; padding:0; width: 100% !important; }
-		body { background-color: #ffffff; font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif; min-width: 100% !important; margin: 0; padding: 0; -webkit-text-size-adjust:none; }
-		.ReadMsgBody { width: 100%; }
-		.ExternalClass { width: 100%; display:block !important; } /* Force Hotmail to display emails at full width */
-
-		/* Reset Styles */
-		/* Add 100px so mobile switch bar doesn't cover street address. */
-		html { background: #ffffff; margin: 0; padding: 0; }
-		img { color:#f09; display: block; font-style:italic; line-height: 100%; outline: none; text-decoration: none; } /*Turn height: auto; off - breaks image in Outlook 2000/2003*/ 
-		a img { border:none; }
-		br, strong br, b br, em br, i br { line-height:100%; }
-		h1, h2, h3, h4, h5, h6 { color:#333333 !important; line-height: 100% ;-webkit-font-smoothing: antialiased; text-wrap: unrestricted; }
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #1d72b0 !important; text-decoration: none; }
-		h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active {	color: red !important; }
-		/* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
-		h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited { color: #009ddb !important; }
-		/* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */  
-		table td, table tr { border-collapse: collapse; }
-		.yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span {
-			color: black; text-decoration: none !important; border-bottom: none !important; background: none !important;
-		}
-		/* End Boilerplate */
-
-
-		/* Template-specific Styles*/
-
-		/* Fonts and Content */
-		a { color: #1d72b0; font-weight: bold; text-decoration: none; }
-		h1, h3 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:24px; font-weight:bold; line-height:28px; margin:0 0 18px 0; text-align:left; }
-		h3 { font-size:18px; line-height:28px; }
-		p, li { color: #333333; font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif; font-size: 14px; line-height:23px; text-align: left; margin:0 0 18px 0; }
-		ul { list-style-type: disc; margin: 0 0 18px 24px; padding: 0; }
-		ol { margin: 0 0 18px 24px; padding: 0; }
-		li { font-weight: bold; margin: 0 0 2px 0; padding: 0; }
-		li strong { color: #c72131; }
-		code { font-family: monospace; }
-
-		span.preheader { display: none !important; }
-		.grey { background: #f2f2f2; }
-		.white { background: #ffffff; }
-		.border { border: 1px solid #868686; }
-		.green {background: #93c600; }
-
-		/* Structure */
-		#top-bar { background: #ebebeb; color: #777777; margin: 0; -webkit-font-smoothing: antialiased; }
-		#top-bar a { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal; color: #6d6d6d; text-decoration: none; }
-		#top-bar .webversion a { color: #ec6a76; }
-		.top-link { border-right: 1px solid #282828; font-size: 12px; text-align: center; }
-		.top-link-date { border-right: 1px solid #282828; font-size: 14px; text-align: left; }
-		.tweet { background-color: #33c7fa; }
-		.facebook { background-color: #4367a4; }
-		.forward { background-color: #00a651; }
-
-		.btn { background-color: #1d72b0; color: #ffffff; display: block; padding: 10px 10px 10px 10px; text-align: center !important; text-decoration: none; width: 200px; }
-		.btn a { color: #ffffff; }
-
-		/* Prevent Webkit and Windows Mobile platforms from changing default font sizes on header and footer. */
-		.header-content, .footer-content-left, .footer-content-right { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
-		.header-content { color: #8f8f8f; font-size: 12px; }
-		.header-content td { padding: 7px 0 8px 0; }
-		.header-content a { color: #6d6d6d; font-weight: bold; text-decoration: none; }
-
-		.navigation .navigation-title, .table-of-contents { color: #333333 !important; font-size: 15px; margin: 4px 0; }
-		.meta { background-color: #444444; }
-		.meta p { color: #aeaeae; font-size: 12px; margin: 0; text-align: center; }
-		.meta-issue-number { color: #ffffff; }
-
-		.table-of-contents tbody { width: 100%; }
-		.table-of-contents td { padding-top: 5px; padding-bottom: 8px; }
-		.table-of-contents a, .table-of-contents p {color: #1d72b0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px; font-weight: bold; line-height: 18px; }
-		.table-of-contents span { color: #aeaeae; }
-
-		.major-hero { background-color: #e0e0e0; }
-		.hero { background: #f2f2f2; margin: 0; padding: 0; }
-
-		.campaign-title { color: #ff0099 !important; text-align: center; }
-		.campaign-content strong { border-bottom: 1px solid #ffffff; color: #ffffff; }
-		.campaign-banner-title h1 { font-size: 21px; font-weight: normal; line-height: 30px; margin: 0; }
-		.article th { font-weight: normal; }
-		.article h2 { font-size: 21px; line-height: 27px; text-align: center; }
-
-		.section-title h3 {color: #999999 !important; }
-		.article-copy img {margin-bottom: 18px; }
-		.img-caption{ border-bottom: 1px solid #f2f2f2; font-style: italic; padding-bottom: 12px; text-align:center; }
-
-		.list-index {background-color: #f2f2f2; }
-		.list-index p { color:#333333; font-size:15px; font-weight:bold; line-height:24px; margin: 0 0 12px 0; padding: 12px 0 0 0; }
-		.list-index .list-item { border-top:1px solid #e3e3e3; }
-		.list-index .list-item:first-child { border-top:none !important; }
-
-		.submodule-2col { background: #f2f2f2; margin: 0; }
-		.submodule-2col p { font-size:13px; line-height:21px; margin: 0 0 0 0; }
-		.submodule-2col .content { margin: 0 0 18px 0; }
-
-		.event-title a { text-decoration: none; }
-		.event-entry { padding-bottom: 30px !important; }
-		.event-entry p { margin: 0 !important; }
-		.event-date-month { background: #1d72b0; font-size: 13px; font-weight: bold; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: #ffffff; line-height: 13px; padding-top: 3px; padding-bottom: 3px;text-transform: uppercase; }
-		.event-date-day { background: #eeeeee; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; color: #1d72b0; }
-		.event-entry .event-title { line-height:18px !important; }
-		.more-info { display: block; margin-top: 10px; margin-bottom: 30px; }
-
-		.company-address, .company-name { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-		.contact-details { color: #999999; font-size:12px; line-height: 18px; text-align: left; } 
-		.contact-details .company-name, .contact-details .company-address { font-weight: bold; }
-		.contact-details h4 { font-size: 15px; line-height: 18px; margin-top: 0; margin-bottom: 5px; }
-		.contact-details p, .contact-details a { font-size:12px; line-height: 21px; margin: 0; } 
-		.contact-details p { color: #777777; } 
-		.contact-details span { color: #777777; }
-		.contact-details span.divider { color: #dddddd; }
-		.hotline p, .hotline span{ color: #ff0000; font-weight: bold; } 
-
-		.disclaimer p { color: #aeaeae; margin-bottom: 18px !important; }
-		.preferences { color: #999999; font-size: 13px; font-weight: bold; margin-bottom: 18px !important; }
-
-		/* Mobile-specific Styles */
-		@media only screen and (max-width: 480px) {
-
-			body,
-			table[class="hero"],
-			table[class="campaign-banner"],
-			table[class="intro"],
-			table[class="article"],
-			table[class="event"],
-			table[class="footer"],
-			h1 {
-				width: 320px !important;
-				text-align: left;
-			}
-
-			h1 { font-size:21px !important; text-align: left !important; }
-			p { font-size: 13px !important; line-height: 18px !important; text-align: left !important; }
-			img { display: inline-block !important; height: auto !important; }
-
-			/* Content- - Images */
-			.hero, td[class="hero"] { width: 320px !important; }
-			img[class="hero-img"], img[class="full-width-img"] { width: 320px !important; max-width: 100% !important; }
-			img[class="full-width-img"] { width: 100% !important; max-width: 100% !important; }
-
-			ul li, ol li, .article-description-blog ul li { font-size: 13px !important; line-height: 18px !important; }
-			#footer p, #footer a { font-size: 10px !important; line-height: 12px !important; }
-			table[class=w0], td[class=w0] { width: 0 !important; }
-			.w10, table[class=w10], td[class=w10], img[class=w10] { width:10px !important; }
-			.w20, table[class=w20], td[class=w25], img[class=w25] { display:block !important; width:10px !important; }
-			.w40, table[class=w40], td[class=w40], img[class=w40] { width:20px !important; }
-			.w80, table[class=w80], td[class=w80], img[class=w80] { width:40px !important; }
-			.w140, table[class=w140], td[class=w140], img[class=w140] { width:70px !important; }
-			.w150, table[class=w150], td[class=w150], img[class=w150] { width:75px !important; }
-			.w200, table[class=w200], td[class=w200], img[class=w200] { width:100px !important; }
-			.w210, table[class=w210], td[class=w210], img[class=w210] { width:107px !important; }
-			.w214, table[class=w214], td[class=w214], img[class=w214] { width:110px !important; }
-			.w300, table[class=w300], td[class=w300], img[class=w300] { width:140px !important; }
-			.w400, table[class=w400], td[class=w400], img[class=w400] { width:200px !important; }
-			.w500, table[class=w500], td[class=w500], img[class=w500] { width:250px !important; }
-			.w540, table[class=w540], td[class=w540], img[class=w540] { width:270px !important; }
-			.w580, table[class=w580], td[class=w580], img[class=w580] { width:280px !important; }
-			.w590, table[class=w590], td[class=w590], img[class=w590] { width:100% !important; }
-			.w640, table[class=w640], td[class=w640], img[class=w640] { width:300px !important; }
-			.w-full-width, table[class=w-full-width], td[class=w-full-width], img[class=w-full-width] { width:100% !important; }
-			.hide, table[class=hide], td[class=hide], img[class=hide], p[class=hide], span[class=hide] { display:none !important; }
-
-			.section-title h3, .article-copy h3 { text-align: left !important; }
-
-			.contact-details { text-align: center !important; }
-			.company-name { text-align: center; } 
-			.company-address, .company-address p, .disclaimer p, .meta p { text-align: center; }
-			.company-address span { display: block; }
-			.article img { margin: 0 0 18px 0; }
-
-			.list-index p { padding: 0 12px 12px 12px; }
-			.footer-logos { margin-top: 18px;}
-			.meta { display: block; margin-bottom: 12px; padding: 6px 0; }
-			.navigation-title { text-align: center !important;}
-			.table-of-contents { padding: 0 18px; }
-
-			.submodule-2col { margin-top: 24px; }
-			.submodule-2col p { padding: 0 12px !important; }
-			.label { margin-top: 10px; }
-			.event-entry h3,.event-entry p {text-align: left !important;}
-
-			.event-entry h3,.event-entry p { text-align: left !important; }
-			.social{ margin-top: 18px; } 
-			.hotline p, .hotline span{ text-align: left !important; } 
-		}
-
-		@media only screen and (max-width: 640px) {
-
-			body,
-			table[class="hero"],
-			table[class="campaign-banner"],
-			table[class="intro"],
-			table[class="article"],
-			table[class="event"],
-			table[class="footer"],
-			h1 {
-				width: 100% !important;
-				text-align: left;
-			}
-
-			.w20, table[class=w20], td[class=w20], img[class=w20] { display:none !important; width:10% !important; }
-			.w40, table[class=w40], td[class=w40], img[class=w40] { width:20% !important; }
-			.w150, table[class=w150], td[class=w150], img[class=w150] { width:25% !important; }
-			.w300, table[class=w300], td[class=w300], img[class=w300] { width:40% !important; }
-			.w400, table[class=w400], td[class=w400], img[class=w400] { width:85% !important; }
-			.w590, table[class=w590], td[class=w590], img[class=w590] { width:100% !important; }
-			.w640, table[class=w640], td[class=w640], img[class=w640] { width:90% !important; }
-			.w-full-width, table[class=w-full-width], td[class=w-full-width], img[class=w-full-width] { width:100% !important; }
-			.hide, table[class=hide], td[class=hide], img[class=hide], p[class=hide], span[class=hide] { display:none !important; }
-
-			img[class="full-width-img"] { width: 100% !important; max-width: 100% !important; }
-
-			.collapse, .collapse-toc { display: block; position: relative; width:100%; }
-			.collapse tbody, .collapse-toc tbody { display: block; float: left; width: 100%; }
-			.collapse tbody tr, .collapse-toc tbody tr { display: block; width: 100% !important; }
-			.collapse th, .collapse-toc th { display: block; width: 100% !important; }
-			.collapse-toc th { display: block; width: 85% !important; }
-
-			.submodule-2col { margin-top: 24px; }
-			.submodule-2col p { padding: 0 12px !important; }
-
-			.article img { margin: 0 0 18px 0; }
-			.contact-details, .company-address p, .disclaimer p, .meta p { text-align: center !important; }
-			.list-index p { padding: 0 12px 12px 12px; }
-			.navigation-title {text-align: center !important; }
-			.footer-logos { margin-top: 18px;}
-			.social{ margin-top: 18px; } 
-
-			.table-of-contents tbody { display: table-row-group !important; width: 85% !important; float: none !important; }
-			.table-of-contents tbody tr { display: table-row !important; width: 85%; float: none !important; }
-		}
-
-	</style>
+	<link rel="stylesheet" href="css/screen.css" type="text/css"/>
 </head>
 
-<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" style="-webkit-font-smoothing:antialiased;width:100% !important;-webkit-text-size-adjust:none; margin: 0; padding: 0;">
+<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" style="-webkit-font-smoothing:antialiased; width:100% !important; -webkit-text-size-adjust:none; margin: 0; padding: 0;">
 
 	<!-- Social Media Navigation -->
-	<table id="top-bar" class="w-full-width" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+	<table id="social-navigation" class="w-full-width" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
 		<tr>
 			<td class="w10 hide" width="5"></td>
 			<td class="w325 hide" width="350" valign="middle" align="left">
@@ -287,10 +51,10 @@
 				<table class="w-full-width" width="640" cellpadding="0" cellspacing="0" border="0" align="center">
 					<tr>
 						<td class="w640" width="274" valign="top" align="center">
-							<img label="Forgacs Logo" src="images/logo.gif" alt="generic"/>
+							<img label="Logo" src="images/logo.gif" alt="generic"/>
 						</td>
 						<td class="w640 hide" width="366" valign="top" align="left">
-							<img label="Forgacs Logo" src="images/tagline.gif" alt="generic"/>
+							<img label="Logo" src="images/tagline.gif" alt="generic"/>
 						</td>
 					</tr>
 				</table>
@@ -301,14 +65,14 @@
 	<!-- Hero Image -->
 	<table class="w-full-width major-hero" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
 		<tr>
-			<td class="w640 hero" width="100%" valign="top" align="center">
+			<td class="w640 hero-content" width="100%" valign="top" align="center">
 				<img class="w640 hero-img" editable="true" label="Hero Image" src="images/hero.gif" width="640" alt="generic Header" style="-ms-interpolation-mode:bicubic;" />
 			</td>
 		</tr>
 
 		<!-- Title and Meta -->
 		<tr>
-			<td class="w640 hero" width="100%" valign="top" align="center">
+			<td class="w640 hero-content" width="100%" valign="top" align="center">
 				<table class="collapse w640 white" cellpadding="0" cellspacing="0" border="0" align="center">
 					<tr>
 						<th class="w20 hide" width="20"></th>
@@ -337,7 +101,7 @@
 								<tbody>
 									<tableofcontents>
 										<repeatertitle/>&nbsp;&nbsp;<span>/</span>&nbsp;&nbsp;
-									</tableofcontents>
+										</tableofcontents>
 								</tbody>
 							</table>
 						</th>
@@ -352,10 +116,10 @@
 
 	</table>
 
-	<!-- Divider -->
-	<table class="w640" width="640" cellpadding="0" cellspacing="0" border="0" align="center">
+	<!-- Divider - Image -->
+	<table class="w640" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
 		<tr>
-			<td>
+			<td align="center">
 				<img class="full-width-img" src="images/bg-divider.gif" width="640" alt="Bg Divider" />
 			</td>
 		</tr>
@@ -389,18 +153,32 @@
 		</layout>
 	</repeater>
 
+	<!-- Layout 1 -->
 	<!-- Generic Content - 1 column text only -->
 	<repeater>
 		<layout label="Generic Article">
-			<table class="w640 article" width="640" cellpadding="0" cellspacing="0" border="0" align="center">
+			<table class="w640 article" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+
+				<!-- Section Divider -->
 				<tr>
-					<td class="w640 hide" width="640" height="18" align="center"></td>
+					<td class="w640" width="640" height="18" align="center"></td>
 				</tr>
 				<tr>
-					<td class="w640" width="640" height="30" valign="top" align="center">
-						<img class="full-width-img" src="images/bg-divider-thin.gif" alt="" />
+					<td class="w640 section-divider" width="100%">
+						<table class="w640" cellpadding="0" cellspacing="0" border="0" align="center">
+							<tr>
+								<td class="w20 hide" width="20"></td>
+								<td class="w640 grey" width="600" height="1"></td>
+								<td class="w20 hide" width="20"></td>
+							</tr>
+						</table>
 					</td>
 				</tr>
+				<tr>
+					<td class="w640" width="640" height="24" align="center"></td>
+				</tr>
+
+				<!-- Content -->
 				<tr>
 					<td class="w640 section-content" width="100%">
 						<table class="w640 article-content" cellpadding="0" cellspacing="0" border="0" align="center">
@@ -434,32 +212,48 @@
 
 				<!-- Button -->
 				<tr>
-					<table class="w640 article-content" width="600" cellpadding="0" cellspacing="0" border="0" align="center">
-						<tr>
-							<td class="w640" width="200" height="30" valign="middle" align="center">
-								<p class="btn">
-									<singleline label="Click-through Link">Generic Button</singleline>
-								</p>
-							</td>
-							<td class="w20 hide" width="420"></td>
-						</tr>
-					</table>
+					<td class="w640" width="100%">
+						<table class="w640 article-content" width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+							<tr>
+								<td class="w640" width="200" height="30" valign="middle" align="center">
+									<p class="btn">
+										<singleline label="Click-through Link">Generic Button</singleline>
+									</p>
+								</td>
+								<td class="w20 hide" width="420"></td>
+							</tr>
+						</table>
+					</td>
 				</tr>
 
 			</table>
 		</layout>
 
-	<!-- Generic Content - 1 column with full width Image -->
+		<!-- Layout 2 -->
+		<!-- Generic Content - 1 column with full width Image -->
 		<layout label="Generic Article with Image">
-			<table class="w640 article" width="640" cellpadding="0" cellspacing="0" border="0" align="center">
+			<table class="w640 article" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+
+				<!-- Section Divider -->
 				<tr>
-					<td class="w640 hide" width="640" height="18" align="center"></td>
+					<td class="w640" width="640" height="18" align="center"></td>
 				</tr>
 				<tr>
-					<td class="w640" width="640" height="30" valign="top" align="center" colspan="3">
-						<img class="full-width-img" src="images/bg-divider-thin.gif" alt="" />
+					<td class="w640 section-divider" width="100%">
+						<table class="w640" cellpadding="0" cellspacing="0" border="0" align="center">
+							<tr>
+								<td class="w20 hide" width="20"></td>
+								<td class="w640 grey" width="600" height="1"></td>
+								<td class="w20 hide" width="20"></td>
+							</tr>
+						</table>
 					</td>
 				</tr>
+				<tr>
+					<td class="w640" width="640" height="24" align="center"></td>
+				</tr>
+
+				<!-- Content -->
 				<tr>
 					<td class="w640 section-content" width="100%">
 						<table class="w640 article-content" cellpadding="0" cellspacing="0" border="0" align="center">
@@ -496,16 +290,18 @@
 
 					<!-- Button -->
 					<tr>
-						<table class="w640 article-content" width="600" cellpadding="0" cellspacing="0" border="0" align="center">
-							<tr>
-								<td class="w640" width="200" height="30" valign="middle" align="center">
-									<p class="btn">
-										<singleline label="Click-through Link">Generic Button</singleline>
-									</p>
-								</td>
-								<td class="w20 hide" width="420"></td>
-							</tr>
-						</table>
+						<td class="w640" width="100%">
+							<table class="w640 article-content" width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+								<tr>
+									<td class="w640" width="200" height="30" valign="middle" align="center">
+										<p class="btn">
+											<singleline label="Click-through Link">Generic Button</singleline>
+										</p>
+									</td>
+									<td class="w20 hide" width="420"></td>
+								</tr>
+							</table>
+						</td>
 					</tr>
 
 				</tr>
@@ -513,19 +309,34 @@
 		</layout>
 	</repeater>
 
+	<!-- Layout 3 -->
 	<!-- Key Dates -->
 	<table class="w640 event" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+
+		<!-- Section Divider -->
 		<tr>
-			<td class="w640" width="640" height="30" align="center"></td>
+			<td class="w640" width="640" height="18" align="center" colspan="5"></td>
 		</tr>
 		<tr>
-			<td class="w640" width="640" height="30" valign="top" align="center" colspan="3">
-				<img class="full-width-img" src="images/bg-divider-thin.gif" alt="" />
+			<td class="w640 section-divider" width="100%" colspan="5">
+				<table class="w640" cellpadding="0" cellspacing="0" border="0" align="center">
+					<tr>
+						<td class="w20 hide" width="20"></td>
+						<td class="w640 grey" width="600" height="1"></td>
+						<td class="w20 hide" width="20"></td>
+					</tr>
+				</table>
 			</td>
 		</tr>
 		<tr>
-			<td class="w640 section-content" width="100%" colspan="3">
+			<td class="w640" width="640" height="24" align="center" colspan="5"></td>
+		</tr>
+
+		<!-- Content -->
+		<tr>
+			<td class="w640 section-content" width="100%">
 				<table class="w640 article-content" cellpadding="0" cellspacing="0" border="0" align="center">
+
 					<repeater>
 					<layout label="Key Dates Description">
 					<tr>
@@ -551,6 +362,8 @@
 					</tr>
 					</layout>
 					</repeater>
+
+					<!-- Rss Feed -->
 					<datarepeater type="rss" src="http://basebusiness.com.au/key-dates/rss">
 						<layout>
 							<tr>
@@ -569,7 +382,7 @@
 								<td width="485" valign="top">
 									<table class="event-entry" width="100%" cellpadding="0" cellspacing="0" border="0">
 										<tr>
-											<td class="w640 intro-copy" width="540">
+											<td class="w640 event-copy" width="540">
 												<h3 class="event-title"><rssitemlink><a href="#">Faucibus</a><rsstitle tocitem></rsstitle></rssitemlink></h3>
 												<rssbody paragraphs="1">Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue.</rssbody>
 											</td>
@@ -580,99 +393,130 @@
 							</tr>
 						</layout>
 					</datarepeater>
+
 				</table>
 			</td>
 		</tr>
-		<tr>
-			<td class="w640" width="640" height="24" align="center"></td>
-		</tr>
 	</table>
 
+	<!-- Layout 4 -->
 	<!-- Article Section with multiple articles -->
-	<table class="collapse w640 article" width="640" cellpadding="0" cellspacing="0" border="0" align="center">
+	<table class="collapse w640 article" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+
+		<!-- Section Divider -->
 		<tr>
-			<td class="w640 hide" width="640" height="18" align="center"></td>
+			<th class="w640" width="640" height="18" align="center"></th>
 		</tr>
 		<tr>
-			<th class="w640" width="640" height="30" valign="top" align="center">
-				<img class="full-width-img" src="images/bg-divider-thin.gif" alt="" />
+			<th class="w640 section-divider" width="100%">
+				<table class="w640" cellpadding="0" cellspacing="0" border="0" align="center">
+					<tr>
+						<th class="w20 hide" width="20"></th>
+						<th class="w640 grey" width="600" height="1"></th>
+						<th class="w20 hide" width="20"></th>
+					</tr>
+				</table>
 			</th>
 		</tr>
+		<tr>
+			<th class="w640 hide" width="640" height="24" align="center"></th>
+		</tr>
+
+		<!-- Content -->
 		<tr>
 			<th class="w640 section-content" width="100%">
 				<table class="w640 article-content" cellpadding="0" cellspacing="0" border="0" align="center">
 					<th class="w20 hide" width="20"></th>
 					<th class="w640 article-copy" width="600" valign="top" align="left" >
-						<h3><singleline label="Article Title" repeatertitle="true">Article Title</singleline></h3>
+						<h1><singleline label="Article Title" repeatertitle="true">Article Title</singleline></h1>
 					</th>
 					<th class="w20 hide" width="20"></th>
 				</table>
 			</th>
 		</tr>
-		<repeater>
-			<layout label="Article - 2 Column">
-				<tr>
-					<td class="w640 section-content" width="100%">
-						<table class="w640 article-content" cellpadding="0" cellspacing="0" border="0" align="center">
-							<th class="w20 hide" width="20"></th>
-							<th class="w200" width="200" valign="top" align="left">
-								<img editable="true" src="images/img-2col.gif" width="200" height="247" label='Image' alt="" />
-							</th>
-							<th class="w20" width="20"></th>
-							<th class="w640 article-copy" width="400" valign="top" align="left" >
-								<h3><singleline label="Article Title" repeatertitle="true"><a href="#">Article Heading</a></singleline></h3>
-								<multiline label="Main Article Content">
-									<p>Cras consequat tortor vitae lorem consectetur placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo id dolor sagittis ac condimentum nisi fermentum. Curabitur facilisis luctus sollicitudin.</p>
-								</multiline>
-
-								<p class="btn"><singleline label="Click-through Link">Generic Button</singleline></p>
-							</th>
-							<th class="w20 hide" width="20"></th>
-						</table>
-					</td>
-				</tr>
-				<tr>
-					<td class="w640 hide" width="640" height="24" align="center"></td>
-				</tr>
-				<tr>
-					<td class="w640" width="640" height="30" valign="top" align="center">
-						<img class="full-width-img" src="images/bg-divider-thin.gif" alt="" />
-					</td>
-				</tr>
-			</layout>
-		</repeater>
-	</table>
-
-	<!-- Full width List -->
-	<table class="w640 article" width="640" cellpadding="0" cellspacing="0" border="0" align="center">
 		<tr>
-			<th class="w640 hide" width="640" height="18" align="center" colspan="3"></th>
+			<td class="w640" width="640" height="18" align="center"></td>
 		</tr>
 		<tr>
-			<td class="w20" width="20"></td>
+			<th class="w640 section-content" width="100%">
+			<repeater>
+				<layout label="Article - 2 Column">
+				<table class="w640 article-content" cellpadding="0" cellspacing="0" border="0" align="center">
+					<tr>
+						<th class="w20 hide" width="20"></th>
+						<th class="w200" width="200" valign="top" align="left">
+							<img editable="true" src="images/img-2col.gif" width="200" height="247" label='Image' alt="" />
+						</th>
+						<th class="w20" width="40"></th>
+						<th class="w640 article-copy" width="380" valign="top" align="left" >
+							<h3><singleline label="Article Title" repeatertitle="true"><a href="#">Article Heading</a></singleline></h3>
+							<multiline label="Main Article Content">
+								<p>Cras consequat tortor vitae lorem consectetur placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo id dolor sagittis ac condimentum nisi fermentum. Curabitur facilisis luctus sollicitudin.</p>
+							</multiline>
+
+							<p class="btn"><singleline label="Click-through Link">Generic Button</singleline></p>
+						</th>
+						<th class="w20 hide" width="20"></th>
+					</tr>
+
+					<!-- Section Divider -->
+					<tr>
+						<th class="w640" width="640" height="24" align="center" colspan="5"></th>
+					</tr>
+					<tr>
+						<th class="w640 section-divider" width="100%" colspan="5">
+							<table class="w-full-width" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+								<tr>
+									<th class="w20 hide" width="20"></th>
+									<th class="w640 grey" width="600" height="1"></th>
+									<th class="w20 hide" width="20"></th>
+								</tr>
+							</table>
+						</th>
+					</tr>
+					<tr>
+						<th class="w640 hide" width="640" height="24" align="center" colspan="5"></th>
+					</tr>
+				</table>
+				</layout>
+			</repeater>
+			</th>
+		</tr>
+	</table>
+
+	<!-- Layout 5 -->
+	<!-- Full width List -->
+	<table class="w640 article" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+		<tr>
+			<td class="w640" width="640" height="6" align="center" colspan="3"></td>
+		</tr>
+		<tr>
+			<td class="w20 hide" width="20"></td>
 			<td class="w640" width="600" align="center">
 				<table class="w640 article-content" cellpadding="0" cellspacing="0" border="0" align="center">
 					<tr>
 						<td class="w640" width="600">
-							<h2><singleline label="Section Title" repeatertitle="true">Section Title</singleline></h2>
+							<h1><singleline label="Section Title" repeatertitle="true">Section Title</singleline></h1>
 						</td>
 					</tr>
 				</table>
 			</td>
-			<td class="w20" width="20"></td>
+			<td class="w20 hide" width="20"></td>
 		</tr>
 		<tr>
-			<td class="w640 hide" width="640" height="9" align="center" colspan="3"></td>
+			<td class="w640 hide" width="640" height="18" align="center" colspan="3"></td>
 		</tr>
+
+		<!-- Content -->
 		<tr>
-			<td class="w20" width="20"></td>
+			<td class="w20 hide" width="20"></td>
 			<td class="w640 section-content" width="600">
 				<table class="w640 article-content list-index" cellpadding="0" cellspacing="0" border="0" align="center">
 					<tr>
 						<td class="w640" width="640" height="12" colspan="3"></td>
 					</tr>
 					<tr>
-						<td class="w20 hide" width="20"></td>
+						<td class="w20" width="20"></td>
 						<td class="w580 article-copy" width="540">
 							<repeater>
 								<layout label="Section">
@@ -680,32 +524,48 @@
 								</layout>
 							</repeater>
 						</td>
-						<td class="w20 hide" width="20"></td>
+						<td class="w20" width="20"></td>
 					</tr>
 					<tr>
 						<td class="w640 hide" width="640" height="12" colspan="3"></td>
 					</tr>
 				</table>
 			</td>
-			<td class="w20" width="20"></td>
+			<td class="w20 hide" width="20"></td>
+		</tr>
+
+		<!-- Section Divider -->
+		<tr>
+			<td class="w640" width="640" height="40" align="center" colspan="3"></td>
 		</tr>
 		<tr>
-			<td class="w640 hide" width="640" height="30" valign="bottom" align="center" colspan="3">
-				<img class="full-width-img" src="images/bg-divider-thin.gif" alt="" />
+			<td class="w640 section-divider" width="100%" colspan="3">
+				<table class="w640" cellpadding="0" cellspacing="0" border="0" align="center">
+					<tr>
+						<td class="w20 hide" width="20"></td>
+						<td class="w640 grey" width="600" height="1"></td>
+						<td class="w20 hide" width="20"></td>
+					</tr>
+				</table>
 			</td>
+		</tr>
+		<tr>
+			<td class="w640" width="640" height="12" align="center" colspan="3"></td>
 		</tr>
 
 	</table>
 
+	<!-- Layout 6 -->
 	<!-- Article - 2 column -->
-	<table class="w640 article-content" cellpadding="0" cellspacing="0" border="0" align="center">
+	<table class="w640 article-content-2-col" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
 		<tr>
-			<td class="w640 hide" width="640" height="42" align="center"></td>
+			<td class="w640 hide" width="640" height="24" align="center"></td>
 		</tr>
 		<tr>
 			<td class="w640" width="640">
 				<table class="collapse w640" cellpadding="0" cellspacing="0" border="0" align="center">
 					<tr>
+						<!-- Column: Left -->
 						<th class="w300" width="290">
 							<table class="submodule-2col" cellpadding="0" cellspacing="0" border="0" align="left">
 								<tr>
@@ -742,6 +602,8 @@
 							</table>
 						</th>
 						<th class="w20 hide" width="20"></th>
+
+						<!-- Column: Right -->
 						<th class="w300" width="290">
 							<table class="submodule-2col" cellpadding="0" cellspacing="0" border="0" align="right">
 								<tr>
@@ -782,22 +644,36 @@
 			</td>
 		</tr>
 		<tr>
-			<td class="w640 hide" width="640" height="42" align="center"></td>
+			<td class="w640" width="640" height="30" align="center"></td>
 		</tr>
 	</table>
 
 	<!-- Footer -->
-	<table class="w640 footer" width="640" cellpadding="0" cellspacing="0" border="0" align="center">
+	<table class="w640 footer" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+
+		<!-- Section Divider -->
 		<tr>
-			<td class="w640" width="640" height="20" valign="bottom" align="center">
-				<img class="full-width-img" src="images/bg-divider-medium.gif" alt="Bg Divider Medium" />
+			<td class="w640" width="640" height="18" align="center"></td>
+		</tr>
+		<tr>
+			<td class="w640 section-divider" width="100%">
+				<table class="w640" cellpadding="0" cellspacing="0" border="0" align="center">
+					<tr>
+						<td class="w20 hide" width="20"></td>
+						<td class="w640 grey" width="600" height="1"></td>
+						<td class="w20 hide" width="20"></td>
+					</tr>
+				</table>
 			</td>
 		</tr>
 		<tr>
-			<td class="w640" width="640" height="40" align="center"></td>
+			<td class="w640" width="640" height="24" align="center"></td>
 		</tr>
+
+		<!-- Content -->
 		<tr>
 			<td class="w640 section-content" width="100%">
+
 				<!-- Contact -->
 				<table class="w640 article-content contact-details" cellpadding="0" cellspacing="0" border="0" align="center">
 					<tr>
@@ -808,6 +684,7 @@
 						<td class="w20 hide" width="20"></td>
 					</tr>
 					<tr>
+
 						<!-- 2 Column footer contact details -->
 						<td class="w20 hide" width="20"></td>
 						<td class="w640" width="600">
@@ -865,17 +742,29 @@
 						</td>
 						<td class="w20 hide" width="20"></td>
 					</tr>
+
+					<!-- Section Divider -->
 					<tr>
-						<td class="w640" width="640" height="38" align="center" colspan="3"></td>
+						<td class="w640" width="640" height="36" align="center" colspan="3"></td>
 					</tr>
 					<tr>
-						<td class="w640" width="640" height="30" valign="top" align="center" colspan="3">
-							<img class="full-width-img" src="images/bg-divider-thin.gif" width="600" height="2" alt="Bg Divider" />
+						<td class="w640 section-divider" width="100%" colspan="3">
+							<table class="w640 article-content" cellpadding="0" cellspacing="0" border="0" align="center">
+								<tr>
+									<td class="w20 hide" width="20"></td>
+									<td class="w640 grey" width="600" height="1"></td>
+									<td class="w20 hide" width="20"></td>
+								</tr>
+							</table>
 						</td>
+					</tr>
+					<tr>
+						<td class="w640" width="640" height="24" align="center" colspan="3"></td>
 					</tr>
 					<tr>
 						<td class="w20 hide" width="20"></td>
 						<td class="w600" width="600">
+
 							<!--  1 column Address details -->
 							<table class="collapse w600 contact-details" cellpadding="0" cellspacing="0" border="0" align="center">
 								<tr>
@@ -894,14 +783,26 @@
 						</td>
 						<td class="w20 hide" width="20"></td>
 					</tr>
+
+					<!-- Section Divider -->
 					<tr>
-						<td class="w640" width="640" height="30" valign="bottom" align="center" colspan="3">
-							<img class="full-width-img" src="images/bg-divider-thin.gif" width="600" height="2" alt="Bg Divider" />
+						<td class="w640" width="640" height="24" align="center" colspan="3"></td>
+					</tr>
+					<tr>
+						<td class="w640 section-divider" width="100%" colspan="3">
+							<table class="w640 article-content" cellpadding="0" cellspacing="0" border="0" align="center">
+								<tr>
+									<td class="w20 hide" width="20"></td>
+									<td class="w640 grey" width="600" height="1"></td>
+									<td class="w20 hide" width="20"></td>
+								</tr>
+							</table>
 						</td>
 					</tr>
 					<tr>
-						<td class="w640" width="640" height="20" valign="bottom" align="center" colspan="3"></td>
+						<td class="w640" width="640" height="24" align="center" colspan="3"></td>
 					</tr>
+
 					<!-- Preferences and Disclaimer -->
 					<tr>
 						<td class="w20 hide" width="20"></td>
@@ -917,8 +818,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td class="w640 hide" width="640" height="30" valign="bottom" align="center">
-			</td>
+			<td class="w640 hide" width="640" height="30" valign="bottom" align="center"></td>
 		</tr>
 	</table>
 	</body>

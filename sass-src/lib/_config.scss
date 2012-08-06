@@ -1,0 +1,84 @@
+// Config
+// 
+// These are global variables. Follow the format of the examples given.
+// 
+// Colours should be prefixed with 'color'
+// Text variables are anything to do with type
+// Spacing variables so we don't have to write the same thing everywhere
+// Grid variables for building grid classes
+// ----------------------------------------
+
+// Layout
+$spacing-small			: 12px;
+$spacing-default		: 18px;
+$spacing-medium-small	: 24px;
+$spacing-medium			: 28px;
+$spacing-large			: 40px;
+
+// Mobile Device Sizings
+$default-mobile-portrait	: 320px;
+$default-mobile-landscape	: 100%;
+$table-of-content-width		: 85%;
+
+// Colors
+$white	: #fff;
+$black	: #000;
+$red	: #ff0000;
+
+// Primary Color - "Grey"
+$primary-color-1: #333;
+$primary-color-2: #666;
+$primary-color-3: #999;
+$primary-color-4: #aaa;
+$primary-color-5: #eee;
+$primary-color-6: #f2f2f2;
+
+// Secondary Color - 
+$secondary-color-1: #5b99aa;
+$secondary-color-2: #3c798a;
+$secondary-color-3: #3b7484;
+$secondary-color-4: #316675;
+
+// Complimentary Color 1 - 
+$complimentary-color-1-1: #1d72b0;
+
+// Complimentary Color 2 - "Color name" (e.g. "Red")
+$complimentary-color-2-1: #fefee8;
+$complimentary-color-2-2: #f2efd4;
+$complimentary-color-2-3: #f2efd4;
+
+// Global Color Variables
+$background-color	: $white;
+$text-color			: $primary-color-1;
+$quiet-color		: lighten($text-color, 20%);
+$loud-color			: darken($text-color, 13.33%);
+$alt-text-color		: $primary-color-2;
+
+// Default Links
+$link-color				: $complimentary-color-1-1;
+$link-hover-color		: darken($complimentary-color-1-1, 10);
+$link-focus-color		: $link-hover-color;
+$link-active-color		: lighten(adjust-hue($link-color, 75deg), 10%);
+$link-visited-color		: darken($link-color, 10%);
+$social-link-color		: #ec6a76;
+
+// Social links 
+$tweet-color				:	#33c7fa;
+$facebook-color				:	#4367a4;
+$forward-to-friend-color	:	#00a651;
+
+// Font Families inc Typekit / Google Web Fonts  etc
+$font-family-1: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+
+// Font Sizes
+$default-font-size: 14px;
+$default-line-height: 23px;
+
+$font-size-xsmall: 12px;
+$font-size-small: 13px;
+$font-size-medium: 18px;
+$font-size-medium-large: 21px;
+$font-size-large: 24px;
+
+// Additional Generic Button Attributes
+$default-button-width: 200px;

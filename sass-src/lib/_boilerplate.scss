@@ -1,0 +1,217 @@
+/*
+	Boilerplate
+	-----------
+		
+	Define:
+	1. Boilerplate styles
+	2. Global styles
+*/
+
+/* Boilerplate */
+
+/* Client-specific Styles */
+
+#outlook a {
+	padding: 0;
+}	/* Force Outlook to provide a "view in browser" button. */
+
+.ReadMsgBody {
+	width: 100%;
+}
+
+.ExternalClass {
+	width: 100%;
+	display:block !important;
+} /* Force Hotmail to display emails at full width */
+
+html {
+	background: $white;
+	margin: 0;
+	padding:0;
+	width: 100% !important;
+}
+
+body {
+	background-color: $white;
+	font-family: $font-family-1;
+	min-width: 100% !important;
+	margin: 0;
+	padding: 0;
+	-webkit-text-size-adjust: none;
+
+	@include mobile-landscape {
+		width: $default-mobile-landscape !important;
+		text-align: left;
+	}
+
+	@include mobile-portrait {
+		width: $default-mobile-portrait !important;
+		text-align: left;
+	}
+}
+
+/* Reset Styles */
+
+/*Turn height: auto; off - breaks image in Outlook 2000/2003*/ 
+img {
+	color: #f09;
+	display: block;
+	font-style:italic;
+	line-height: 100%;
+	outline: none;
+	text-decoration: none;
+
+	@include mobile-portrait {
+		display: inline-block !important;
+		height: auto !important
+	}
+} 
+
+a img {
+	border:none;
+}
+
+br,
+strong br,
+b br,
+em br,
+i br {
+	line-height:100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color:$primary-color-1 !important;
+	line-height: 100%;
+	-webkit-font-smoothing: antialiased;
+	text-wrap: unrestricted;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: $link-color !important;
+	text-decoration: none;
+}
+
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+	color: red !important;
+}
+
+/* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+	color: $link-hover-color !important;
+}
+/* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */  
+table td,
+table tr {
+	border-collapse: collapse;
+}
+
+.yshortcuts,
+.yshortcuts a,
+.yshortcuts a:link,
+.yshortcuts a:visited,
+.yshortcuts a:hover,
+.yshortcuts a span {
+	color: black;
+	text-decoration: none !important;
+	border-bottom: none !important;
+	background: none !important;
+}
+
+
+/* Template-specific Styles*/
+
+/* Fonts and Content */
+a {
+	color: $link-color;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+h1,
+h3 {
+	font-family: $font-family-1;
+	font-size: $font-size-large;
+	font-weight: bold;
+	line-height: $spacing-medium;
+	margin: 0 0 $spacing-default 0;
+	text-align: left;
+}
+
+h1 {
+	@include mobile-portrait {
+		font-size: $font-size-medium-large !important;
+		text-align: left !important;
+	}
+}
+
+h3 {
+	font-size: $font-size-medium;
+	line-height: $spacing-medium;
+}
+
+p,
+li {
+	color: $text-color;
+	font-family: $font-family-1;
+	font-size: $default-font-size;
+	line-height:$default-line-height;
+	text-align: left;
+	margin:0 0 $spacing-default 0;
+}
+
+p {
+	@include mobile-portrait {
+		font-size: $font-size-small !important;
+		line-height: $spacing-default !important;
+		text-align: left !important;
+	}
+}
+
+ul {
+	list-style-type: disc;
+	margin: 0 0 $spacing-default $spacing-medium-small;
+	padding: 0;
+}
+
+ol {
+	margin: 0 0 $spacing-default $spacing-medium-small;
+	padding: 0;
+}
+
+li {
+	font-weight: bold;
+	margin: 0 0 2px 0;
+	padding: 0;
+}
+
+li strong {
+	color: $loud-color;
+}
+code {
+	font-family: monospace;
+}
+strong {
+	font-weight: bold;
+}
+
+/* End Boilerplate */
